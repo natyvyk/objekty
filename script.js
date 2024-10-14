@@ -1,37 +1,28 @@
-const apartment = {
-    type: 'rent',
-    disposition: '3+1',
-    area: {
-      floorage: 100,
-      balcony: 2,
-      units: 'sqm',
+const kniha1 = {
+    nazev: "Chaos",
+    autor: "Natálie Vykoukalová",
+    pocetStran: 236,
+    rokVydani: 2014,
+    jazyk: "čeština",
+    nakladatelstvi: {
+        jmeno: "Róza",
+        adresa: "Česká 23, Zlín",
     },
-    city: 'Prague',
-    district: 'Old Town',
-    price: {
-      rent: 28000,
-      fees: {
-        water: 1000,
-        energy: 2500,
-        services: 560,
-      },
-      currency: 'czk',
+};
+
+const kniha2 = {
+    nazev: "A řád",
+    autor: "Natynka Papaa",
+    pocetStran: 26,
+    rokVydani: 2024,
+    jazyk: "čeština",
+    nakladatelstvi: {
+        jmeno: "Rozinka",
+        adresa: "Česká 23, Zlín",
     },
-    ownership: 'personal',
-    condition: 'renovated',
-    status: 'free',
-    floor: 3,
-  };
+};
 
-  
-document.body.innerHTML += "<p>Dispozice bytu: " + apartment.disposition + "</p>"
-document.body.innerHTML += "<p>Čistý nájem bez poplatků: " + apartment.price.rent + "</p>"
-document.body.innerHTML += "<p>Výměra bytu: " + apartment.area.floorage + " " + apartment.area.units + ", počet balkonů: " + apartment.area.balcony + "</p>"
-
-const city = "Prague"
-const district = "Old Town"
-
-document.body.innerHTML += "<p> Poloha bytu: " + district + ", " + city + "</p>"
+    document.body.innerHTML += "<p> Nakladatelství: " + kniha1.nakladatelstvi.jmeno + "</p>"
+    document.body.innerHTML += "<p> Má druhá kniha s názvem: " + kniha2.nazev + "</p>"
 
 
-apartment.status = "taken"
